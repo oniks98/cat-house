@@ -1,5 +1,3 @@
-@import "./styleguide.css";
-
 .header {
   background-color: var(--common-white);
   padding: 16px;

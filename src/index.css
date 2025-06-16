@@ -1,10 +1,1 @@
-/* src/index.css */
-
-/* вся Preflight + utilities (включая компоненты) */
 @import 'tailwindcss';
-
-/* ваши переменные и глобальные правила */
-@import './tailwind-base.css';
-
-/* ваши кастомные стили */
-@import './styles.css';

@@ -28,6 +28,25 @@
   @apply text-[28px] leading-9 text-grey font-sans font-bold tracking-[0.32px];
 }
 
+@utility longread-areas {
+  grid-template-areas:
+    'b b s'
+    'b b s'
+    'b b v'
+    'b b .';
+  gap: 60px 24px;
+
+  .blog {
+    grid-area: b;
+  }
+  .socials {
+    grid-area: s;
+  }
+  .video {
+    grid-area: v;
+  }
+}
+
 img {
   width: 100%;
   height: 100%;

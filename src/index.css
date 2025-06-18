@@ -24,6 +24,10 @@
   @apply text-base leading-5 text-white font-sans font-bold tracking-[0.5px];
 }
 
+@utility title {
+  @apply text-[28px] leading-9 text-grey font-sans font-bold tracking-[0.32px];
+}
+
 img {
   width: 100%;
   height: 100%;

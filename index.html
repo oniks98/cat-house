@@ -30,13 +30,35 @@
     </header>
 
     <main class="main">
-      <div class="container">
-        <ul class="posts">
-          <li class="post">
-            <a href="#">
-              <img src="./img/picture 1.png" alt="kitten" class="post-img" />
-              <div class="overlay">
-                <h2 class="post-title sub-title">
+      <div class="max-w-6xl px-3 mx-auto">
+        <ul
+          class="grid grid-cols-[1fr] gap-y-3 mb-24 md:grid-cols-2 md:gap-6 xl:mb-20"
+        >
+          <li class="md:col-[1/2] md:row-[1/3]">
+            <a href="#" class="h-full relative text-white block">
+              <picture>
+                <!-- For viewports wider than 768px -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/picture-1.png"
+                />
+
+                <!-- For viewports between 320px and 768px -->
+                <source
+                  media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="./img/picture-1-small.png"
+                />
+
+                <!-- Fallback content -->
+                <img
+                  src="./img/picture-1-small.png"
+                  alt="Description of Image"
+                />
+              </picture>
+              <div
+                class="absolute left-0 bottom-0 w-full bg-black/50 rounded-b-[36px] py-3 px-5"
+              >
+                <h2 class="sub-title">
                   Коти та їхні чудові навички: від полювання до загадкових
                   здібностей
                 </h2>
@@ -44,14 +66,16 @@
             </a>
           </li>
           <li class="post">
-            <a href="#">
+            <a href="#" class="relative text-white block">
               <img
-                src="./img/picture 2.png"
+                src="./img/picture-2.png"
                 alt="scary kitten"
                 class="post-img"
               />
-              <div class="overlay">
-                <h2 class="post-title sub-title">
+              <div
+                class="absolute left-0 bottom-0 w-full bg-black/50 rounded-b-[16px] py-3 px-5"
+              >
+                <h2 class="sub-title">
                   Коти в літературі та мистецтві: від Егіпетських богів до
                   сучасних майстрів
                 </h2>
@@ -59,10 +83,12 @@
             </a>
           </li>
           <li class="post">
-            <a href="#">
-              <img src="./img/picture 3.png" alt="cat" class="post-img" />
-              <div class="overlay">
-                <h2 class="post-title sub-title">
+            <a href="#" class="relative text-white block">
+              <img src="/img/picture-3.png" alt="cat" class="post-img" />
+              <div
+                class="absolute left-0 bottom-0 w-full bg-black/50 rounded-b-[16px] py-3 px-5"
+              >
+                <h2 class="sub-title">
                   Котячі породи для активних власників: як вибрати компаньйона
                 </h2>
               </div>

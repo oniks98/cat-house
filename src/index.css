@@ -12,4 +12,19 @@
   --color-pink: #ffe8f1;
   --color-turquoise: #e9f9f8;
   --color-lilac: #f2eef8;
+
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 768px;
+  --breakpoint-xl: 1152px;
+
+  --font-sans: Montserrat, Helvetica, sans-serif;
+}
+
+@utility sub-title {
+  @apply text-base leading-5 text-white font-sans font-bold tracking-[0.5px];
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
